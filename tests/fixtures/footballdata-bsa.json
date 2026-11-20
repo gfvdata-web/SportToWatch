@@ -1,0 +1,319 @@
+{
+ "filters": {
+  "season": "2026",
+  "status": [
+   "SCHEDULED",
+   "TIMED"
+  ]
+ },
+ "resultSet": {
+  "count": 30,
+  "first": "2026-11-21",
+  "last": "2026-12-03",
+  "played": 0
+ },
+ "competition": {
+  "id": 2013,
+  "name": "Campeonato Brasileiro Série A",
+  "code": "BSA",
+  "type": "LEAGUE",
+  "emblem": "https://crests.football-data.org/bsa.png"
+ },
+ "matches": [
+  {
+   "area": {
+    "id": 2032,
+    "name": "Brazil",
+    "code": "BRA",
+    "flag": "https://crests.football-data.org/764.svg"
+   },
+   "competition": {
+    "id": 2013,
+    "name": "Campeonato Brasileiro Série A",
+    "code": "BSA",
+    "type": "LEAGUE",
+    "emblem": "https://crests.football-data.org/bsa.png"
+   },
+   "season": {
+    "id": 2474,
+    "startDate": "2026-01-28",
+    "endDate": "2026-12-02",
+    "currentMatchday": 35,
+    "winner": null
+   },
+   "id": 555095,
+   "utcDate": "2026-11-22T00:00:00Z",
+   "status": "TIMED",
+   "matchday": 36,
+   "stage": "REGULAR_SEASON",
+   "group": null,
+   "lastUpdated": "2026-11-19T20:20:32Z",
+   "homeTeam": {
+    "id": 1772,
+    "name": "Chapecoense AF",
+    "shortName": "Chapecoense",
+    "tla": "CHA",
+    "crest": "https://crests.football-data.org/1772_large.png"
+   },
+   "awayTeam": {
+    "id": 1771,
+    "name": "Cruzeiro EC",
+    "shortName": "Cruzeiro",
+    "tla": "CRU",
+    "crest": "https://crests.football-data.org/1771.png"
+   },
+   "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+     "home": null,
+     "away": null
+    },
+    "halfTime": {
+     "home": null,
+     "away": null
+    }
+   },
+   "odds": {
+    "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+   },
+   "referees": []
+  },
+  {
+   "area": {
+    "id": 2032,
+    "name": "Brazil",
+    "code": "BRA",
+    "flag": "https://crests.football-data.org/764.svg"
+   },
+   "competition": {
+    "id": 2013,
+    "name": "Campeonato Brasileiro Série A",
+    "code": "BSA",
+    "type": "LEAGUE",
+    "emblem": "https://crests.football-data.org/bsa.png"
+   },
+   "season": {
+    "id": 2474,
+    "startDate": "2026-01-28",
+    "endDate": "2026-12-02",
+    "currentMatchday": 35,
+    "winner": null
+   },
+   "id": 555105,
+   "utcDate": "2026-11-27T23:00:00Z",
+   "status": "TIMED",
+   "matchday": 37,
+   "stage": "REGULAR_SEASON",
+   "group": null,
+   "lastUpdated": "2026-11-19T20:20:32Z",
+   "homeTeam": {
+    "id": 1765,
+    "name": "Fluminense FC",
+    "shortName": "Fluminense",
+    "tla": "FLU",
+    "crest": "https://crests.football-data.org/1765.png"
+   },
+   "awayTeam": {
+    "id": 1771,
+    "name": "Cruzeiro EC",
+    "shortName": "Cruzeiro",
+    "tla": "CRU",
+    "crest": "https://crests.football-data.org/1771.png"
+   },
+   "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+     "home": null,
+     "away": null
+    },
+    "halfTime": {
+     "home": null,
+     "away": null
+    }
+   },
+   "odds": {
+    "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+   },
+   "referees": []
+  },
+  {
+   "area": {
+    "id": 2032,
+    "name": "Brazil",
+    "code": "BRA",
+    "flag": "https://crests.football-data.org/764.svg"
+   },
+   "competition": {
+    "id": 2013,
+    "name": "Campeonato Brasileiro Série A",
+    "code": "BSA",
+    "type": "LEAGUE",
+    "emblem": "https://crests.football-data.org/bsa.png"
+   },
+   "season": {
+    "id": 2474,
+    "startDate": "2026-01-28",
+    "endDate": "2026-12-02",
+    "currentMatchday": 35,
+    "winner": null
+   },
+   "id": 555113,
+   "utcDate": "2026-12-03T00:30:00Z",
+   "status": "TIMED",
+   "matchday": 38,
+   "stage": "REGULAR_SEASON",
+   "group": null,
+   "lastUpdated": "2026-11-19T20:20:32Z",
+   "homeTeam": {
+    "id": 1771,
+    "name": "Cruzeiro EC",
+    "shortName": "Cruzeiro",
+    "tla": "CRU",
+    "crest": "https://crests.football-data.org/1771.png"
+   },
+   "awayTeam": {
+    "id": 6684,
+    "name": "SC Internacional",
+    "shortName": "Internacional",
+    "tla": "SCI",
+    "crest": "https://crests.football-data.org/6684.png"
+   },
+   "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+     "home": null,
+     "away": null
+    },
+    "halfTime": {
+     "home": null,
+     "away": null
+    }
+   },
+   "odds": {
+    "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+   },
+   "referees": []
+  },
+  {
+   "area": {
+    "id": 2032,
+    "name": "Brazil",
+    "code": "BRA",
+    "flag": "https://crests.football-data.org/764.svg"
+   },
+   "competition": {
+    "id": 2013,
+    "name": "Campeonato Brasileiro Série A",
+    "code": "BSA",
+    "type": "LEAGUE",
+    "emblem": "https://crests.football-data.org/bsa.png"
+   },
+   "season": {
+    "id": 2474,
+    "startDate": "2026-01-28",
+    "endDate": "2026-12-02",
+    "currentMatchday": 35,
+    "winner": null
+   },
+   "id": 555098,
+   "utcDate": "2026-11-21T19:30:00Z",
+   "status": "TIMED",
+   "matchday": 36,
+   "stage": "REGULAR_SEASON",
+   "group": null,
+   "lastUpdated": "2026-11-19T20:20:32Z",
+   "homeTeam": {
+    "id": 1769,
+    "name": "SE Palmeiras",
+    "shortName": "Palmeiras",
+    "tla": "PAL",
+    "crest": "https://crests.football-data.org/1769.png"
+   },
+   "awayTeam": {
+    "id": 1783,
+    "name": "CR Flamengo",
+    "shortName": "Flamengo",
+    "tla": "FLA",
+    "crest": "https://crests.football-data.org/1783.png"
+   },
+   "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+     "home": null,
+     "away": null
+    },
+    "halfTime": {
+     "home": null,
+     "away": null
+    }
+   },
+   "odds": {
+    "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+   },
+   "referees": []
+  },
+  {
+   "area": {
+    "id": 2032,
+    "name": "Brazil",
+    "code": "BRA",
+    "flag": "https://crests.football-data.org/764.svg"
+   },
+   "competition": {
+    "id": 2013,
+    "name": "Campeonato Brasileiro Série A",
+    "code": "BSA",
+    "type": "LEAGUE",
+    "emblem": "https://crests.football-data.org/bsa.png"
+   },
+   "season": {
+    "id": 2474,
+    "startDate": "2026-01-28",
+    "endDate": "2026-12-02",
+    "currentMatchday": 35,
+    "winner": null
+   },
+   "id": 555092,
+   "utcDate": "2026-11-21T20:30:00Z",
+   "status": "TIMED",
+   "matchday": 36,
+   "stage": "REGULAR_SEASON",
+   "group": null,
+   "lastUpdated": "2026-11-19T20:20:32Z",
+   "homeTeam": {
+    "id": 1777,
+    "name": "EC Bahia",
+    "shortName": "Bahia",
+    "tla": "BAH",
+    "crest": "https://crests.football-data.org/1777.png"
+   },
+   "awayTeam": {
+    "id": 4241,
+    "name": "Coritiba FBC",
+    "shortName": "Coritiba",
+    "tla": "COR",
+    "crest": "https://crests.football-data.org/4241.png"
+   },
+   "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+     "home": null,
+     "away": null
+    },
+    "halfTime": {
+     "home": null,
+     "away": null
+    }
+   },
+   "odds": {
+    "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+   },
+   "referees": []
+  }
+ ]
+}

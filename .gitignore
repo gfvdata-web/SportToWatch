@@ -1,0 +1,17 @@
+node_modules/
+.wrangler/
+worker/.dev.vars
+worker/worker-configuration.d.ts.bak
+
+# App Android (android/): build, cache e configuração local
+android/.gradle/
+android/.kotlin/
+android/**/build/
+android/local.properties
+android/captures/
+# Chave de assinatura (keystore) e APKs: NUNCA no Git
+*.jks
+*.keystore
+*.p12
+*.apk
+*.aab

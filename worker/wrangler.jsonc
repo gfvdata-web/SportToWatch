@@ -1,0 +1,31 @@
+// Worker único do Esportes para assistir: serve o site (../docs, estáticos) e a API (/api/*).
+// Como funciona: CLAUDE.md. Só serviços do plano grátis que param no limite em vez de cobrar (sem R2).
+// Sem Cron (a conta já usa os 5): a API busca de novo quando o dado vence (stale-while-revalidate).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sport-to-watch",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "routes": [{ "pattern": "esportes.gfvdata.com", "custom_domain": true }],
+  "assets": {
+    "directory": "../docs",
+    "binding": "ASSETS",
+    // Só a API passa pelo Worker; o resto sai direto dos estáticos (não gasta requisição de Worker).
+    "run_worker_first": ["/api/*", "/app", "/app/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "BANCO",
+      "database_name": "sport-to-watch",
+      "database_id": "c1a87607-7127-4a0f-99f7-46d38db1fc69",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // APKs do app Android + versao.json, gravados pelo android.yml (ficam só os 3 mais novos).
+  "kv_namespaces": [{ "binding": "APKS", "id": "4f684a56d4c34a8391b419345c0e0da1" }]
+  // Segredos (wrangler secret put, feito pelo dono):
+  //   TOKEN_ENVIO          rotinas automáticas (POST /api/atualizar, Bearer)
+  //   FOOTBALL_DATA_TOKEN  chave da football-data.org (a mesma do Cruzeiro_InData)
+}

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_fundo"
+    android:padding="8dp">
+
+    <!-- Quatro linhas fixas (os 4 próximos eventos); as sem evento ficam GONE. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linha_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/barra_1"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icone_1"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textSize="13sp"
+                tools:text="⚽" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quando_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:text="sáb 22/11 · 21:00" />
+
+                    <TextView
+                        android:id="@+id/competicao_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        tools:ignore="RtlSymmetry"
+                        tools:text="Brasileirão" />
+
+                    <TextView
+                        android:id="@+id/ao_vivo_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:text="@string/ao_vivo"
+                        android:textColor="@color/widget_ao_vivo"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="@color/widget_texto"
+                    android:textSize="12sp"
+                    tools:text="Cruzeiro x Atlético-MG" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linha_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/barra_2"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icone_2"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textSize="13sp"
+                tools:text="⚽" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quando_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:text="sáb 22/11 · 21:00" />
+
+                    <TextView
+                        android:id="@+id/competicao_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        tools:ignore="RtlSymmetry"
+                        tools:text="Brasileirão" />
+
+                    <TextView
+                        android:id="@+id/ao_vivo_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:text="@string/ao_vivo"
+                        android:textColor="@color/widget_ao_vivo"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="@color/widget_texto"
+                    android:textSize="12sp"
+                    tools:text="Cruzeiro x Atlético-MG" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linha_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/barra_3"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icone_3"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textSize="13sp"
+                tools:text="⚽" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quando_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:text="sáb 22/11 · 21:00" />
+
+                    <TextView
+                        android:id="@+id/competicao_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        tools:ignore="RtlSymmetry"
+                        tools:text="Brasileirão" />
+
+                    <TextView
+                        android:id="@+id/ao_vivo_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:text="@string/ao_vivo"
+                        android:textColor="@color/widget_ao_vivo"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="@color/widget_texto"
+                    android:textSize="12sp"
+                    tools:text="Cruzeiro x Atlético-MG" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linha_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/barra_4"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icone_4"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textSize="13sp"
+                tools:text="⚽" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quando_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:text="sáb 22/11 · 21:00" />
+
+                    <TextView
+                        android:id="@+id/competicao_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:textColor="@color/widget_texto_suave"
+                        android:textSize="10sp"
+                        tools:ignore="RtlSymmetry"
+                        tools:text="Brasileirão" />
+
+                    <TextView
+                        android:id="@+id/ao_vivo_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingStart="6dp"
+                        android:text="@string/ao_vivo"
+                        android:textColor="@color/widget_ao_vivo"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="@color/widget_texto"
+                    android:textSize="12sp"
+                    tools:text="Cruzeiro x Atlético-MG" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widget_vazio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/widget_vazio"
+        android:textColor="@color/widget_texto_suave"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/widget_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:includeFontPadding="false"
+        android:text="@string/widget_sem_conexao"
+        android:textColor="@color/widget_ao_vivo"
+        android:textSize="9sp"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="acento">#2563EB</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="fundo_claro">#F4F6FB</color>
+    <color name="fundo_escuro">#0B1120</color>
+    <!-- Widget: claro por padrão, escuro em values-night. -->
+    <color name="widget_fundo">#FFFFFF</color>
+    <color name="widget_texto">#0F172A</color>
+    <color name="widget_texto_suave">#64748B</color>
+    <color name="widget_ao_vivo">#DC2626</color>
+</resources>

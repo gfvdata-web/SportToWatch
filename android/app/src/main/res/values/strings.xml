@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt">
+    <!-- Nome no ícone do celular (o debug troca em src/debug). -->
+    <string name="app_name">Esportes</string>
+    <string name="widget_descricao">Os próximos jogos e corridas do Cruzeiro, da Fórmula 1 e do CS2</string>
+
+    <string name="esporte_cruzeiro">Cruzeiro</string>
+    <string name="esporte_f1">Fórmula 1</string>
+    <string name="esporte_cs">CS2</string>
+    <string name="esporte_outro">Outros</string>
+
+    <string name="ao_vivo">AO VIVO</string>
+    <string name="sem_eventos">Nenhum evento por vir.</string>
+    <string name="sem_dados">Ainda sem dados. Puxe a tela para atualizar.</string>
+    <string name="falha_ao_atualizar">Sem conexão. Mostrando o último dado salvo.</string>
+    <string name="widget_sem_conexao">sem conexão</string>
+    <string name="widget_vazio">Nenhum evento por vir</string>
+
+    <string name="widget_titulo">Widget na tela inicial</string>
+    <string name="widget_instrucao">Segure em um espaço vazio da tela inicial, toque em Widgets e escolha Esportes. Ele mostra os 4 próximos eventos e se atualiza sozinho a cada 30 minutos.</string>
+    <string name="widget_adicionar">Adicionar widget</string>
+
+    <string name="versao_instalada">Versão %1$s · build %2$d</string>
+    <string name="versao_nova">Versão %1$s disponível</string>
+    <string name="versao_baixar">Baixar</string>
+</resources>

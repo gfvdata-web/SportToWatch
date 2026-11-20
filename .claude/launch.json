@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sport-to-watch-local",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--prefix", "worker", "wrangler", "dev", "--config", "worker/wrangler.jsonc", "--port", "8787"],
+      "port": 8787
+    }
+  ]
+}

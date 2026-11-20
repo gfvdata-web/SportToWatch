@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+# Checagem do repo, sem rede, sem tokens e sem navegador. Silenciosa quando passa; sai com 1 e
+# uma mensagem curta (arquivo:linha / o que quebrou) quando falha.
+#   scripts/check            completo: JSON, sintaxe JS, tsc do worker e todos os testes (tests/)
+#   scripts/check <arquivo>  rápido: só o que vale para aquele arquivo (caminho Windows ou relativo)
+# Chamado pelo hook global (~/.claude/hooks/run-check.sh) depois de cada edição e pelo
+# .githooks/pre-commit (completo) antes de cada commit.
+#
+# Cobertura: (cada linha tem pelo menos um teste; "sem teste" diz o motivo)
+#   leitura F1 (normal e sprint), Cruzeiro e CS2     worker/src/fontes.ts   tests/fontes.test.mjs
+#   /api/eventos, validade, trava, erro de fonte,
+#   /api/atualizar (token, intervalo mínimo)         worker/src/index.ts    tests/api.test.mjs
+#   página (GoatCounter, escapar, fuso, sem erro)    docs/                  tests/pagina.test.mjs
+#   (sem teste aqui: android/ — sem JDK local; testes Robolectric rodam no android.yml do Actions)
+#   (sem teste: busca real nas fontes — sem rede no check; conferida com a sonda e no site-check)
+
+cd "$(dirname "$0")/.." || exit 1
+export NODE_OPTIONS="--disable-warning=ExperimentalWarning"
+alvo="$(printf '%s' "${1:-}" | sed 's#\\#/#g')"; alvo="${alvo#"$(pwd -W 2>/dev/null || pwd)/"}"; alvo="${alvo#"$(pwd)/"}"
+falhas=0
+
+# rodar <rótulo> <comando...>: silencioso se passa; senão mostra o fim da saída.
+rodar() {
+  local saida
+  saida="$("${@:2}" 2>&1)" || { echo "FALHOU: $1"; printf '%s\n' "$saida" | grep -v '^ℹ' | tail -n 45; falhas=1; }
+}
+checar_json() {
+  for f in "$@"; do
+    [ -f "$f" ] || continue
+    out="$(node -e 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"))' "$f" 2>&1)" \
+      || { echo "JSON inválido: $f"; printf '%s\n' "$out" | grep -m1 -i error; falhas=1; }
+  done
+}
+checar_js() { for f in "$@"; do [ -f "$f" ] || continue; out="$(node --check "$f" 2>&1)" || { echo "JS inválido: $f"; printf '%s\n' "$out" | head -5; falhas=1; }; done; }
+checar_sh() { for f in "$@"; do [ -f "$f" ] && { out="$(bash -n "$f" 2>&1)" || { echo "shell inválido: $f"; printf '%s\n' "$out" | head -5; falhas=1; }; }; done; }
+checar_ts() {
+  if [ ! -f worker/node_modules/.bin/tsc ]; then
+    echo "FALHOU: tsc do worker ausente (rodar: npm ci --prefix worker)"; falhas=1; return
+  fi
+  (cd worker && npx --no-install tsc --noEmit --pretty false 2>&1 | head -20; exit "${PIPESTATUS[0]}") || falhas=1
+}
+testes_node() {
+  local arquivos=(tests/*.test.mjs)
+  [ -e "${arquivos[0]}" ] || return 0
+  rodar "testes Node (tests/*.test.mjs)" node --test "${arquivos[@]}"
+}
+
+case "$alvo" in
+  "")
+    mapfile -t json < <(find tests/fixtures .claude -name '*.json' 2>/dev/null); checar_json "${json[@]}"
+    mapfile -t js < <(find docs/js tests -name '*.js' -o -name '*.mjs' 2>/dev/null); checar_js "${js[@]}"
+    checar_sh scripts/check .githooks/pre-commit
+    checar_ts
+    testes_node
+    ;;
+  *.json)                                    checar_json "$alvo"; testes_node ;;
+  tests/*.mjs|docs/js/*.js)                  checar_js "$alvo"; testes_node ;;
+  docs/*|tests/fixtures/*)                   testes_node ;;
+  worker/src/*)                              checar_ts; testes_node ;;
+  worker/migrations/*|worker/wrangler.jsonc) testes_node ;;
+  scripts/check|.githooks/*)                 checar_sh "$alvo" ;;
+  *)                                         : ;;
+esac
+exit $falhas
