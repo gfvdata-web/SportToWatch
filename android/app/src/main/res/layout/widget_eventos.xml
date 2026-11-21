@@ -21,7 +21,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <View
+            <FrameLayout
                 android:id="@+id/barra_1"
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
@@ -109,7 +109,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <View
+            <FrameLayout
                 android:id="@+id/barra_2"
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
@@ -197,7 +197,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <View
+            <FrameLayout
                 android:id="@+id/barra_3"
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
@@ -285,7 +285,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <View
+            <FrameLayout
                 android:id="@+id/barra_4"
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
