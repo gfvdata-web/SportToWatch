@@ -56,7 +56,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         tools:text="sáb 22/11 · 21:00" />
 
@@ -70,7 +70,7 @@
                         android:maxLines="1"
                         android:paddingStart="6dp"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         tools:ignore="RtlSymmetry"
                         tools:text="Brasileirão" />
 
@@ -83,7 +83,7 @@
                         android:paddingStart="6dp"
                         android:text="@string/ao_vivo"
                         android:textColor="@color/widget_ao_vivo"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         android:visibility="gone"
                         tools:ignore="RtlSymmetry" />
@@ -144,7 +144,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         tools:text="sáb 22/11 · 21:00" />
 
@@ -158,7 +158,7 @@
                         android:maxLines="1"
                         android:paddingStart="6dp"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         tools:ignore="RtlSymmetry"
                         tools:text="Brasileirão" />
 
@@ -171,7 +171,7 @@
                         android:paddingStart="6dp"
                         android:text="@string/ao_vivo"
                         android:textColor="@color/widget_ao_vivo"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         android:visibility="gone"
                         tools:ignore="RtlSymmetry" />
@@ -232,7 +232,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         tools:text="sáb 22/11 · 21:00" />
 
@@ -246,7 +246,7 @@
                         android:maxLines="1"
                         android:paddingStart="6dp"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         tools:ignore="RtlSymmetry"
                         tools:text="Brasileirão" />
 
@@ -259,7 +259,7 @@
                         android:paddingStart="6dp"
                         android:text="@string/ao_vivo"
                         android:textColor="@color/widget_ao_vivo"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         android:visibility="gone"
                         tools:ignore="RtlSymmetry" />
@@ -320,7 +320,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         tools:text="sáb 22/11 · 21:00" />
 
@@ -334,7 +334,7 @@
                         android:maxLines="1"
                         android:paddingStart="6dp"
                         android:textColor="@color/widget_texto_suave"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         tools:ignore="RtlSymmetry"
                         tools:text="Brasileirão" />
 
@@ -347,7 +347,7 @@
                         android:paddingStart="6dp"
                         android:text="@string/ao_vivo"
                         android:textColor="@color/widget_ao_vivo"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         android:visibility="gone"
                         tools:ignore="RtlSymmetry" />
